@@ -1,0 +1,16 @@
+Windows application (C++, MFC, Boost) to connect to GSM/CDMA providers (some aggregators like [http://incoremedia.ru/ IncoreMedia] aditionally supported) via [http://en.wikipedia.org/wiki/Short_Message_Peer-to-Peer SMPP protocol] version 3.4 and handle send and receive SMS messages.
+
+Some features to highlight:
+# Support Receiver, Transmitter and Transceiver modes.
+# Async work support implemented for big workload (disabled).
+# Work with MSSQL database to store messages and send.
+# Support extensions to protocol.
+# Attempts to port on wxWidgets and abstract databaselayer has been start but not finished.
+
+== Very short history ==
+* Project initially start by Alexander Lebedev from New Voice company and based on [http://derdack.com/ Derdack] proprietary SMPP library.
+* Then it was transferred to O-range company. 
+* New requirements and protocol extensions dictate search other, free and open SMPP library reimplementation. It was borrowed from great project [https://sourceforge.net/projects/smpprouter/ SMPPRouter]. Reworked and extended.
+
+=== Project not used many years. Published for history ===
+And of course with hope it may help someone.
