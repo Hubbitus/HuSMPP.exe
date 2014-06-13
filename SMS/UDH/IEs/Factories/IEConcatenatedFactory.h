@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////
+// Project : SMPPSample
+// Module  : IEConcatenatedFactory.h
+// Pavel Alexeev
+// Created 2007-06-27 17:11
+////////////////////////////////////////////////////////
+#pragma once
+
+#include "../../IEFactory.h"
+////////////////////////////////////////////////////////
+
+class IIEConcatenatedFactory : public IIEFactory{
+public:
+
+// IEFACTORY_BASICS_DECLARATION
+
+DECLARE_CH_REFCOUNTING( IIEConcatenatedFactory )
+};
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////

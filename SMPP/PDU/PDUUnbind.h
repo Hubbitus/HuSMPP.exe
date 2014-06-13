@@ -1,0 +1,24 @@
+////////////////////////////////////////////////////////
+// Project : SMPPRouter
+// Module  : PDUUnbind.h
+#pragma once
+
+#ifndef __PDUUnbind_H__
+#define __PDUUnbind_H__
+
+////////////////////////////////////////////////////////
+#include "../../HuSMPPshared.h"
+
+#include "../PDU.h"
+////////////////////////////////////////////////////////
+
+class IPDUUnbind : public IPDU
+{
+public:
+  DECLARE_CH_REFCOUNTING( IPDUUnbind )
+};
+
+#endif
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////

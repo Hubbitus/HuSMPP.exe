@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////
+// Project : SMPPRouter
+// Module  : PDUEnquireLink.h
+#pragma once
+
+#ifndef __PDUENQUIRELINK_H__
+#define __PDUENQUIRELINK_H__
+
+////////////////////////////////////////////////////////
+#include "../../HuSMPPshared.h"
+#include "../PDU.h"
+////////////////////////////////////////////////////////
+
+class IPDUEnquireLink : public IPDU
+{
+public:
+  DECLARE_CH_REFCOUNTING( IPDUEnquireLink )
+};
+
+#endif
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////

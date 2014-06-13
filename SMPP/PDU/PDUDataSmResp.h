@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////
+// Project : SMPPRouter
+// Module  : PDUDataSmResp.h
+#pragma once
+
+#ifndef __PDUDataSmResp_H__
+#define __PDUDataSmResp_H__
+
+////////////////////////////////////////////////////////
+#include "../../HuSMPPshared.h"
+#include "../PDU.h"
+////////////////////////////////////////////////////////
+
+class IPDUDataSmResp : public IPDU
+{
+public:
+  DECLARE_CH_REFCOUNTING( IPDUDataSmResp )
+};
+
+#endif
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////

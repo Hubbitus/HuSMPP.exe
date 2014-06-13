@@ -1,0 +1,24 @@
+////////////////////////////////////////////////////////
+// Project	: HuSMPPClient
+// Module	: OPTSarMsgRefNum.h
+// Author	: Pavel Alexeev
+// Created	: 2008-08-20 14:49
+////////////////////////////////////////////////////////
+
+#pragma once
+
+////////////////////////////////////////////////////////
+
+#include "../../HuSMPPshared.h"
+#include "../PDUOptionalParameter.h"
+
+////////////////////////////////////////////////////////
+class OPTSarMsgRefNum : public IPDUOptionalParameter{
+public:
+
+OPT_BASICS_DECLARATION( WORD, PDU_OPT_SarMsgRefNum )
+DECLARE_CH_REFCOUNTING( OPTSarMsgRefNum )
+};
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////

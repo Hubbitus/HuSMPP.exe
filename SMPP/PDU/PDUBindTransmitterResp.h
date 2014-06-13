@@ -1,0 +1,26 @@
+////////////////////////////////////////////////////////
+// Project	: HuSMPP
+// Module	: PDUBindTransmitterResp.h
+// Author	: Pavel Alexeev (Pahan-Hubbitus) 2008-05-21
+////////////////////////////////////////////////////////
+
+#pragma once
+////////////////////////////////////////////////////////
+#include "../../HuSMPPshared.h"
+
+#include "../PDU.h"
+
+#include <string>
+////////////////////////////////////////////////////////
+using namespace std;
+////////////////////////////////////////////////////////
+class IPDUBindTransmitterResp : public IPDU{
+public:
+	virtual void SetSystemId( const char* system_id ) = 0;
+	virtual const string& GetSystemId() = 0;
+
+DECLARE_CH_REFCOUNTING( IPDUBindTransmitterResp )
+};
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////

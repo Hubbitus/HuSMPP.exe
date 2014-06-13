@@ -1,0 +1,391 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SENDSMS_DIALOG DIALOGEX 0, 0, 261, 124
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send SMS manually"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,211,12,36,14
+    GROUPBOX        "Send message",IDC_STATIC,3,3,255,116
+    LTEXT           "TON (Src/Dest):",IDC_STATIC,6,12,48,8
+    EDITTEXT        IDC_SRCTON,56,11,12,12,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    EDITTEXT        IDC_DESTTON,69,11,12,12,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    LTEXT           "NPI (Src/Dest):",IDC_STATIC,8,25,45,8
+    EDITTEXT        IDC_SRCNPI,56,24,12,12,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    EDITTEXT        IDC_DESTNPI,69,24,12,12,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    LTEXT           "Recipient:",IDC_STATIC,8,89,31,8
+    EDITTEXT        IDC_RECIPIENT,44,87,157,12,ES_AUTOHSCROLL
+    LTEXT           "Sender:",IDC_STATIC,8,103,25,8
+    LTEXT           "Options:",IDC_STATIC,8,42,26,8
+    COMBOBOX        IDC_OPTIONS,44,39,93,80,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Message:",IDC_STATIC,8,55,31,8
+    EDITTEXT        IDC_MESSAGE,44,53,206,32,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "0 chars",IDC_COUNT,28,66,14,8
+    PUSHBUTTON      "Send",IDC_SEND,205,89,46,24,0,WS_EX_CLIENTEDGE
+    CONTROL         "CheckDelivery",IDC_CHECKDELIVERY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,139,40,54,10
+    LTEXT           "chars:",IDC_STATIC,9,66,19,8
+    EDITTEXT        IDC_DELIVER_ROUTE,138,12,40,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "DeliverRoute",IDC_CHECKDELIVERROUTE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,83,13,52,10
+    CONTROL         "Register In DB",IDC_CHECKREGISTERINDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,198,40,53,10
+    CONTROL         "DirectDisplay",IDC_CHECKDIRECTDISPLAY,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,83,23,52,10
+    COMBOBOX        IDC_SENDER,44,101,48,74,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SENDSMS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 256
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SENDSMS_DIALOG DLGINIT
+BEGIN
+    IDC_OPTIONS, 0x403, 23, 0
+0x2030, 0x202d, 0x6f4e, 0x7320, 0x6570, 0x6963, 0x6c61, 0x6f20, 0x7470, 
+0x6f69, 0x736e, "\000" 
+    IDC_OPTIONS, 0x403, 26, 0
+0x2031, 0x202d, 0x7552, 0x7373, 0x6169, 0x206e, 0x6328, 0x3170, 0x3532, 
+0x2931, 0x7420, 0x7865, 0x0074, 
+    IDC_OPTIONS, 0x403, 27, 0
+0x2032, 0x202d, 0x6544, 0x696c, 0x6576, 0x7972, 0x6e20, 0x746f, 0x6669, 
+0x6369, 0x7461, 0x6f69, 0x736e, "\000" 
+    IDC_OPTIONS, 0x403, 19, 0
+0x2034, 0x202d, 0x6944, 0x6572, 0x7463, 0x6420, 0x7369, 0x6c70, 0x7961, 
+"\000" 
+    IDC_OPTIONS, 0x403, 17, 0
+0x2038, 0x202d, 0x6238, 0x7469, 0x6d20, 0x7365, 0x6173, 0x6567, "\000" 
+    IDC_OPTIONS, 0x403, 9, 0
+0x3631, 0x2d20, 0x5520, 0x4844, "\000" 
+    IDC_OPTIONS, 0x403, 11, 0
+0x3233, 0x2d20, 0x5620, 0x4d53, 0x4353, "\000" 
+    IDC_OPTIONS, 0x403, 19, 0
+0x3436, 0x2d20, 0x5520, 0x5343, 0x2032, 0x6e65, 0x6f63, 0x6964, 0x676e, 
+"\000" 
+    IDC_OPTIONS, 0x403, 10, 0
+0x3231, 0x2038, 0x202d, 0x4d45, 0x0053, 
+    IDC_SENDER, 0x403, 5, 0
+0x3031, 0x3935, "\000" 
+    IDC_SENDER, 0x403, 5, 0
+0x3331, 0x3834, "\000" 
+    IDC_SENDER, 0x403, 5, 0
+0x3332, 0x3030, "\000" 
+    IDC_SENDER, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_SENDER, 0x403, 8, 0
+0x3030, 0x3630, 0x3138, 0x0035, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SMPPSample.ico"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EXTRA_DIALOG DIALOGEX 0, 0, 293, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extra Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "&Close",IDCLOSE,121,58,50,14
+    EDITTEXT        IDC_KEEPALIVE,95,14,116,14,ES_AUTOHSCROLL
+    LTEXT           "Keep alive interval in ms:",IDC_STATIC,14,17,79,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_EXTRA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SMPPSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ico00001.ico"
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SMPPSAMPLE_DIALOG DIALOGEX 0, 0, 353, 222
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SMPP Sample"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "SMSC address",IDC_STATIC,7,3,196,28
+    LTEXT           "IP address:",IDC_STATIC,13,16,38,8
+    EDITTEXT        IDC_ADDRESS,54,14,66,12,ES_AUTOHSCROLL
+    LTEXT           "Port:",IDC_STATIC,137,16,16,8
+    EDITTEXT        IDC_PORT,157,14,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Binding parameters",IDC_STATIC,7,32,196,69
+    LTEXT           "System ID:",IDC_STATIC,13,46,36,8
+    EDITTEXT        IDC_SYSTEMID,54,44,45,12,ES_AUTOHSCROLL
+    LTEXT           "srcTON:",IDC_STATIC,106,75,26,8
+    EDITTEXT        IDC_SRCADDRTON,133,73,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "System type:",IDC_STATIC,107,46,41,8
+    EDITTEXT        IDC_SYSTEMTYPE,153,44,45,12,ES_AUTOHSCROLL
+    LTEXT           "srcNPI:",IDC_STATIC,156,76,23,8
+    EDITTEXT        IDC_SRCADDRNPI,178,73,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Password:",IDC_STATIC,13,59,36,8
+    EDITTEXT        IDC_PASSWORD,54,58,45,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Version:",IDC_STATIC,15,72,30,8
+    EDITTEXT        IDC_VERSION,54,72,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Addr. range:",IDC_STATIC,107,60,40,8
+    EDITTEXT        IDC_ADDRESSRANGE,153,58,45,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Bind as Transceiver",IDC_TRANSCEIVER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,87,79,10
+    EDITTEXT        IDC_LOG,7,116,339,99,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "Close",IDCANCEL,296,7,50,14
+    PUSHBUTTON      "Settings...",IDC_SETTINGS,296,22,50,14
+    PUSHBUTTON      "Connect",IDC_CONNECT,296,38,50,14
+    PUSHBUTTON      "Disconnect",IDC_DISCONNECT,296,54,50,14
+    PUSHBUTTON      "Clear log",IDC_CLEAR,296,86,50,14
+    LTEXT           "Sent without\ndelivery",IDC_STATIC,212,11,44,17
+    LTEXT           "Received",IDC_STATIC,212,72,32,8
+    LTEXT           "Delivery rcpt received",IDC_STATIC,212,49,38,15
+    EDITTEXT        IDC_EDIT_SENT_NODELIVERY,255,12,32,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_RECEIVED,255,71,32,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DELIVERED,254,50,17,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sent with delivery",IDC_STATIC,212,27,38,16
+    EDITTEXT        IDC_EDIT_SENT_WITHDELIVERY,255,28,32,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Messages",IDC_STATIC,206,3,86,98
+    PUSHBUTTON      "Send SMS",IDC_SEND,296,70,50,14
+    LTEXT           "Errors",IDC_STATIC,212,87,19,8
+    EDITTEXT        IDC_EDIT_ERRORS,255,86,32,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Last timer event:",IDC_STATIC,7,104,53,8
+    LTEXT           "...",IDC_STATIC_LAST_TIMER,56,103,74,10,0,WS_EX_STATICEDGE
+    LTEXT           "dstTON:",IDC_STATIC,106,88,26,8
+    LTEXT           "dstNPI:",IDC_STATIC,156,88,23,8
+    EDITTEXT        IDC_DSTADDRTON,133,86,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DSTADDRNPI,178,86,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DELIVERED_OK,271,43,17,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DELIVERED_BAD,271,57,17,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Ok:",IDC_STATIC,255,42,10,8
+    LTEXT           "Bad:",IDC_STATIC,254,62,14,8
+    LTEXT           "Last connect time:",IDC_STATIC,133,104,53,8
+    LTEXT           "...",IDC_STATIC_LAST_CONNECT_TIME,187,103,80,10,0,WS_EX_STATICEDGE
+    LTEXT           "(Re)connect count:",IDC_STATIC,270,104,57,8
+    LTEXT           "...",IDC_STATIC_RECONNECT_COUNT,329,103,16,10,0,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SMPPSAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,9
+ PRODUCTVERSION 0,0,0,9
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "SMS.exe application for handle SMPP-connections to SMSC (Based on Derdac example)"
+            VALUE "CompanyName", "O-range.ru"
+            VALUE "FileDescription", "Main file"
+            VALUE "FileVersion", "0, 0, 0, 9"
+            VALUE "InternalName", "SMPP.exe"
+            VALUE "LegalCopyright", "Copyright (C) O-range.ru 2007"
+            VALUE "OriginalFilename", "SMPP.exe"
+            VALUE "ProductName", "SMPP.exe Application"
+            VALUE "ProductVersion", "0, 0, 0, 9"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SMPPSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SMPPSample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Debug/SMPPSample.res" /d "_DEBUG" "D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\SMPPSample.rc"" 
+Creating temporary file "C:\DOCUME~1\Hubbitus\LOCALS~1\Temp\RSP25C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/SMPPSample.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\ExtraSettingsDialog.cpp"
+"D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\OutcomingRS.cpp"
+"D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\SendSMSDlg.cpp"
+"D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\smpp.cpp"
+"D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\SMPPSample.cpp"
+"D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\SMPPSampleDlg.cpp"
+"D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\SMSCParams.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Hubbitus\LOCALS~1\Temp\RSP25C.tmp" 
+Creating temporary file "C:\DOCUME~1\Hubbitus\LOCALS~1\Temp\RSP25D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/SMPPSample.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Hubbitus\LOCALS~1\Temp\RSP25D.tmp" 
+Creating temporary file "C:\DOCUME~1\Hubbitus\LOCALS~1\Temp\RSP25E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/SMPP.pdb" /debug /machine:I386 /out:"Debug/SMPP.exe" /pdbtype:sept 
+".\Debug\ExtraSettingsDialog.obj"
+".\Debug\OutcomingRS.obj"
+".\Debug\SendSMSDlg.obj"
+".\Debug\smpp.obj"
+".\Debug\SMPPSample.obj"
+".\Debug\SMPPSampleDlg.obj"
+".\Debug\SMSCParams.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SMPPSample.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Hubbitus\LOCALS~1\Temp\RSP25E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ExtraSettingsDialog.cpp
+OutcomingRS.cpp
+SendSMSDlg.cpp
+smpp.cpp
+SMPPSample.cpp
+SMPPSampleDlg.cpp
+D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\SMPPSampleDlg.cpp(270) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+D:\Hubbitus\DOCS\SMS-SMPPплатформа\My\SMPP.exe_source\4Pasha2\SMPPSampleDlg.cpp(271) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+SMSCParams.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/SMPPSample.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\ExtraSettingsDialog.sbr" ".\Debug\OutcomingRS.sbr" ".\Debug\SendSMSDlg.sbr" ".\Debug\smpp.sbr" ".\Debug\SMPPSample.sbr" ".\Debug\SMPPSampleDlg.sbr" ".\Debug\SMSCParams.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SMPP.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

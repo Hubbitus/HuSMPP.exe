@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////
+// Project : SMPPRouter
+// Module  : PDUGenericNack.h
+#pragma once
+
+#ifndef __PDUGENERICNACK_H__
+#define __PDUGENERICNACK_H__
+
+////////////////////////////////////////////////////////
+#include "../../HuSMPPshared.h"
+#include "../PDU.h"
+////////////////////////////////////////////////////////
+
+class IPDUGenericNack : public IPDU
+{
+public:
+  DECLARE_CH_REFCOUNTING( IPDUGenericNack )
+};
+
+#endif
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////

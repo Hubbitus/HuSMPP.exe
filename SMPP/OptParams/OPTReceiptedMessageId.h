@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////
+// Project : HuSMPPClient
+// Module  : OPTReceiptedMessageId.h
+// Pavel Alexeev	2007-11-29 02:42
+////////////////////////////////////////////////////////
+
+#pragma once
+
+////////////////////////////////////////////////////////
+
+#include "../../HuSMPPshared.h"
+#include "../PDUOptionalParameter.h"
+
+////////////////////////////////////////////////////////
+class OPTReceiptedMessageId : public IPDUOptionalParameter{
+public:
+OPT_BASICS_DECLARATION(std::string, PDU_OPT_ReceiptedMessageId)
+DECLARE_CH_REFCOUNTING( OPTReceiptedMessageId )
+};
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////

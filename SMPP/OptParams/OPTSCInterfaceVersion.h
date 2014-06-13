@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////
+// Project : HuSMPPClient
+// Module  : OPTSCInterfaceVersion.h
+// Pavel Alexeev	2008-01-15 09:22
+////////////////////////////////////////////////////////
+
+#pragma once
+
+////////////////////////////////////////////////////////
+
+#include "../../HuSMPPshared.h"
+#include "../PDUOptionalParameter.h"
+
+////////////////////////////////////////////////////////
+class OPTSCInterfaceVersion : public IPDUOptionalParameter{
+public:
+
+OPT_BASICS_DECLARATION(BYTE, PDU_OPT_SCInterfaceVersion)
+DECLARE_CH_REFCOUNTING( OPTSCInterfaceVersion )
+};
+
+// =================== END OF FILE =====================
+////////////////////////////////////////////////////////
