@@ -9,8 +9,11 @@ Some features to highlight:
 
 == Very short history ==
 * Project initially start by Alexander Lebedev from New Voice company and based on [http://derdack.com/ Derdack] proprietary SMPP library.
-* Then it was transferred to O-range company. 
+* Then it was transferred to O-range company.
 * New requirements and protocol extensions dictate search other, free and open SMPP library reimplementation. It was borrowed from great project [https://sourceforge.net/projects/smpprouter/ SMPPRouter]. Reworked and extended.
+
+== Licensed under GPLv2+ ==
+You may use and modify it under terms of GNU GPL License version 2.0 or later on your oppinion.
 
 === Project not used many years. Published for history ===
 And of course with hope it may help someone.
